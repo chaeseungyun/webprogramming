@@ -1,0 +1,79 @@
+@keyframes backgroundColorChange {
+  from {background-color: #ffffff;}
+  to {background-color: #849fad;}
+}
+
+.trello-page {
+  animation-name: backgroundColorChange;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards; 
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.trello {
+  display: flex;
+  gap: 20px;
+}
+
+.droppable-container {
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+  height: 60vh;
+  background-color: white;
+  position: relative;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.draggable-content {
+  height: calc(60vh - 50px);
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.draggable-content::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
+}
+
+.add-button {
+  height: 50px;
+  background-color: #09405C;
+  color: white;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  box-sizing: border-box;
+  border: 1px solid #cacaca;
+  border-radius: 5px;
+  background-color: white;
+  position: relative;
+  height: 70px;
+}
+
+.trash {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  right: 1px;
+  border-radius: 50px;
+  border: 1px solid #cacaca;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}

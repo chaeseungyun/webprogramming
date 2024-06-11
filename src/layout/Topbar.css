@@ -1,0 +1,29 @@
+.topicon {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.topbar {
+  position: fixed;
+  top: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  padding: 0 30px;
+  box-sizing: border-box;
+  background-color: #09405C;
+  color: white;
+  z-index: 100;
+}
+
+.top-set {
+  display: flex;
+  align-items: center;
+}
+
+.logout-button {
+  color: #09405C;
+  font-weight: bold;
+}

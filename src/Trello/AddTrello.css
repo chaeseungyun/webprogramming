@@ -1,0 +1,51 @@
+.overay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 50vw;
+  height: 50vh;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.add-input {
+  margin-left: 10px;
+}
+
+.modal-button {
+  width: 150px;
+  height: 50px;
+  margin: 0 5px;
+}
+
+.modal-button:first-child {
+  background-color: #09405C;
+  color: white;
+}
+
+.input-set {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+  width: 50%;
+}
+
+label {
+  text-align: center;
+}
